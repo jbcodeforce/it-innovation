@@ -2,3 +2,5 @@ streamlit
 streamlit-lottie
 Pillow
 st-pages
+streamlit_authenticator
+deta

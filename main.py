@@ -3,9 +3,9 @@ import json
 from PIL import Image
 from streamlit_lottie import st_lottie
 from st_pages import Page, show_pages
-
+import streamlit_book as stb
 # find emojis https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title='IT Innovation Consulting',page_icon="👥", layout="wide")
+st.set_page_config(page_title='Intelligent Automation Consulting',page_icon="👥", layout="wide")
 
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
@@ -21,10 +21,12 @@ with st.sidebar:
         Page("pages/3_blogs.py", "Blogs", ":book:"),
         Page("pages/4_contact.py", "Contact", ":email:"),
     ]
+
+    
 )
     
-with st.container():
-    st.title("IT Innovation Consulting")
+with st.container(): 
+    st.title("Intelligent Automation Consulting")
     st.subheader("Welcome to Innovation")
     st.markdown("Are you looking to transform your business and harness the full potential of the Cloud? Our expert consultants specialize in AWS Cloud architecture and application modernization, helping businesses like yours thrive in the digital era.")
    
@@ -32,6 +34,7 @@ lottie_coding = load_lottiefile("images/an-1.json")
 
 with st.container():
     st.write("---")
+
     left_column, right_column = st.columns(2)
     with left_column:
         st.header("Architecture consultancy")

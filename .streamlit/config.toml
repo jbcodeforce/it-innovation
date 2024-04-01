@@ -3,6 +3,7 @@ showSidebarNavigation = false
 
 [server]
 fileWatcherType = "none"
+runOnSave = true
 
 [theme]
 
